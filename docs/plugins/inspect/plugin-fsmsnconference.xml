@@ -1,0 +1,55 @@
+<plugin>
+  <name>fsmsnconference</name>
+  <description>Farstream MSN Conference plugin</description>
+  <filename>../../gst/fsmsnconference/.libs/libfsmsnconference.so</filename>
+  <basename>libfsmsnconference.so</basename>
+  <version>0.1.0.1</version>
+  <license>LGPL</license>
+  <source>farstream</source>
+  <package>Farstream</package>
+  <origin>http://farstream.freedesktop.org/</origin>
+  <elements>
+    <element>
+      <name>fsmsncamrecvconference</name>
+      <longname>Farstream MSN Reception Conference</longname>
+      <class>Generic/Bin/MSN</class>
+      <description>A Farstream MSN Reception Conference</description>
+      <author>Richard Spiers &lt;richard.spiers@gmail.com&gt;, Youness Alaoui &lt;youness.alaoui@collabora.com&gt;, Olivier Crete &lt;olivier.crete@collabora.com&gt;</author>
+      <pads>
+        <caps>
+          <name>sink_%d</name>
+          <direction>sink</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+        <caps>
+          <name>src_%d_%d_%d</name>
+          <direction>source</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+      </pads>
+    </element>
+    <element>
+      <name>fsmsncamsendconference</name>
+      <longname>Farstream MSN Sending Conference</longname>
+      <class>Generic/Bin/MSN</class>
+      <description>A Farstream MSN Sending Conference</description>
+      <author>Richard Spiers &lt;richard.spiers@gmail.com&gt;, Youness Alaoui &lt;youness.alaoui@collabora.co.uk&gt;, Olivier Crete &lt;olivier.crete@collabora.co.uk&gt;</author>
+      <pads>
+        <caps>
+          <name>sink_%d</name>
+          <direction>sink</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+        <caps>
+          <name>src_%d_%d_%d</name>
+          <direction>source</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+      </pads>
+    </element>
+  </elements>
+</plugin>

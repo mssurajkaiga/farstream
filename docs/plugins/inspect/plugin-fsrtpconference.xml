@@ -1,0 +1,34 @@
+<plugin>
+  <name>fsrtpconference</name>
+  <description>Farstream RTP Conference plugin</description>
+  <filename>../../gst/fsrtpconference/.libs/libfsrtpconference.so</filename>
+  <basename>libfsrtpconference.so</basename>
+  <version>0.1.0.1</version>
+  <license>LGPL</license>
+  <source>farstream</source>
+  <package>Farstream</package>
+  <origin>http://farstream.freedesktop.org/</origin>
+  <elements>
+    <element>
+      <name>fsrtpconference</name>
+      <longname>Farstream RTP Conference</longname>
+      <class>Generic/Bin/RTP</class>
+      <description>A Farstream RTP Conference</description>
+      <author>Olivier Crete &lt;olivier.crete@collabora.co.uk&gt;</author>
+      <pads>
+        <caps>
+          <name>sink_%u</name>
+          <direction>sink</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+        <caps>
+          <name>src_%u_%u_%u</name>
+          <direction>source</direction>
+          <presence>sometimes</presence>
+          <details>ANY</details>
+        </caps>
+      </pads>
+    </element>
+  </elements>
+</plugin>

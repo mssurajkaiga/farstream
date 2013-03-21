@@ -1,0 +1,25 @@
+GObject
+  GInitiallyUnowned
+    GstObject
+      GstAllocator
+        GstDefaultAllocator
+      GstBus
+      GstClock
+      GstControlBinding
+      GstControlSource
+      GstElement
+        GstBin
+          GstPipeline
+      GstPad
+      GstPadTemplate
+      GstPlugin
+      GstPluginFeature
+        GstElementFactory
+        GstTypeFindFactory
+      GstRegistry
+      GstTask
+      GstTaskPool
+GInterface
+  GTypePlugin
+  GstChildProxy
+  GstURIHandler
